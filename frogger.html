@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Frogger</title>
+		<script src="frogger.js" defer></script>
+		<link rel="stylesheet" href="frogger.css" />
+		<link rel="stylesheet" href="index.css" />
+		<!-- 
+            Image sources:
+            Minion: https://www.reddit.com/r/Minions/comments/wnkbx0/tposing_minion/
+            Car: https://pngtree.com/freepng/yellow-car-side-view-flat-style-illustration_8951562.html
+			Minion background: https://svgcrown.com/download.php?category=minion&id=2#
+         -->
+	</head>
+	<body>
+		<header>
+			<nav class="nav-container">
+				<a href="index.html">Minion Arcade</a>
+				<ul>
+					<li><a href="./chess.html">Chess</a></li>
+					<li><a href="./sudoku.html">Sudoku</a></li>
+					<li><a href="./frogger.html">Frogger</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="title">
+			<h1>Frogger</h1>
+			<button id="minion-btn">Minion Mode</button>
+		</section>
+		<section class="frogger-game">
+			<div class="stats-container">
+				<p id="score">Score: 0</p>
+				<p id="lives">Lives: 3</p>
+			</div>
+			<canvas id="frogger" width="300px" height="600px"></canvas>
+			<div class="btn-group">
+				<button id="start-btn">Start</button>
+				<button id="reset-btn">Reset</button>
+			</div>
+		</section>
+	</body>
+</html>

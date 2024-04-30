@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sudoku</title>
+		<script src="sudoku.js" defer></script>
+		<link rel="stylesheet" href="sudoku.css" />
+		<link rel="stylesheet" href="index.css" />
+		<!-- 
+			Image sources:
+			Minion background: https://svgcrown.com/download.php?category=minion&id=2#
+		-->
+	</head>
+	<body>
+		<header>
+			<nav class="nav-container">
+				<a href="index.html">Minion Arcade</a>
+				<ul>
+					<li><a href="./chess.html">Chess</a></li>
+					<li><a href="./sudoku.html">Sudoku</a></li>
+					<li><a href="./frogger.html">Frogger</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<section class="title">
+				<h1>Sudoku</h1>
+				<button id="minion-btn">Minion Mode</button>
+			</section>
+			<div class="controls-container">
+				<div class="btn-group">
+					<button
+						data-difficulty="easy"
+						class="difficulty-btn highlighted"
+					>
+						Easy
+					</button>
+					<button data-difficulty="medium" class="difficulty-btn">
+						Medium
+					</button>
+					<button data-difficulty="hard" class="difficulty-btn">
+						Hard
+					</button>
+					<button data-difficulty="very-hard" class="difficulty-btn">
+						Very Hard
+					</button>
+					<button data-difficulty="insane" class="difficulty-btn">
+						Insane
+					</button>
+					<button data-difficulty="inhuman" class="difficulty-btn">
+						Impossible
+					</button>
+				</div>
+				<div class="btn-group">
+					<button data-move="1" class="move-btn highlighted">
+						1
+					</button>
+					<button data-move="2" class="move-btn">2</button>
+					<button data-move="3" class="move-btn">3</button>
+					<button data-move="4" class="move-btn">4</button>
+					<button data-move="5" class="move-btn">5</button>
+					<button data-move="6" class="move-btn">6</button>
+					<button data-move="7" class="move-btn">7</button>
+					<button data-move="8" class="move-btn">8</button>
+					<button data-move="9" class="move-btn">9</button>
+				</div>
+			</div>
+		</section>
+		<section class="lives-container">
+			<h2 id="lives"></h2>
+		</section>
+		<section id="sudoku-board"></section>
+		<div class="center">
+			<button id="reset-btn">Reset</button>
+			<p id="result"></p>
+		</div>
+		<footer>
+			<p>
+				Open source Sudoku game:
+				<a href="https://github.com/robatron/sudoku.js">GitHub Link</a>
+			</p>
+		</footer>
+	</body>
+</html>

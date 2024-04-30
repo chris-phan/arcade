@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.title h1 {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+
+.stats-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px
+}
+
+.stats-container p {
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    font-family: "Roboto Mono", monospace;
+    margin: 0px;
+}
+
+canvas {
+    width: 300px;
+    height: 600px;
+    border: 2px solid black;
+}
+
+.frogger-game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 10px;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-group button {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btn-group button:hover {
+    filter: brightness(90%);
+    cursor: pointer;
+}
+
+#start-btn {
+    background-color: lightgreen;
+    color: black;
+}
+
+#reset-btn {
+    background-color: black;
+    color: white;
+}

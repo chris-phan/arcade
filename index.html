@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Minion Arcade</title>
+		<script src="index.js" defer></script>
+		<link rel="stylesheet" href="index.css" />
+		<!-- 
+			Image sources:
+			Minion background: https://svgcrown.com/download.php?category=minion&id=2#
+		-->
+	</head>
+	<body>
+		<header>
+			<nav class="nav-container">
+				<a href="index.html">Minion Arcade</a>
+				<ul>
+					<li><a href="./chess.html">Chess</a></li>
+					<li><a href="./sudoku.html">Sudoku</a></li>
+					<li><a href="./frogger.html">Frogger</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="title">
+			<h1>Minion Arcade</h1>
+			<button id="minion-btn">Minion Mode</button>
+		</section>
+		<section id="game-container">
+			<a href="./chess.html">
+				<div class="game-card">
+					<h2>Chess</h2>
+					<p>Play 2 player chess!</p>
+					<img
+						src="./images/chess-card.png"
+						alt="chess"
+						title="chess"
+					/>
+				</div>
+			</a>
+			<a href="./sudoku.html">
+				<div class="game-card">
+					<h2>Sudoku</h2>
+					<p>Challenge yourself to sudoku!</p>
+					<img
+						src="./images/sudoku-card.png"
+						alt="sudoku"
+						title="sudokuk"
+					/>
+				</div>
+			</a>
+			<a href="./frogger.html">
+				<div class="game-card">
+					<h2>Frogger</h2>
+					<p>Can you make it to the other side?</p>
+					<img
+						src="./images/frogger-card.png"
+						alt="frogger"
+						title="frogger"
+					/>
+				</div>
+			</a>
+		</section>
+		<footer>
+			<p>
+				Open source Sudoku game:
+				<a href="https://github.com/robatron/sudoku.js">GitHub Link</a>
+			</p>
+		</footer>
+	</body>
+</html>

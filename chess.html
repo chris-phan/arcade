@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Chess</title>
+		<link rel="stylesheet" href="chess.css" />
+		<script src="chess.js" defer></script>
+		<link rel="stylesheet" href="index.css" />
+
+		<!-- 
+			Image sources:
+			Chess pieces: https://commons.wikimedia.org/wiki/Category:SVG_chess_pieces
+			Thor Minion: https://svgcrown.com/download.php?category=minion&id=5
+			Batman Minion: https://svgcrown.com/download.php?category=minion&id=6
+			Minion background: https://svgcrown.com/download.php?category=minion&id=2#
+		-->
+	</head>
+	<body>
+		<header>
+			<nav class="nav-container">
+				<a href="index.html">Minion Arcade</a>
+				<ul>
+					<li><a href="./chess.html">Chess</a></li>
+					<li><a href="./sudoku.html">Sudoku</a></li>
+					<li><a href="./frogger.html">Frogger</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="title">
+			<h1>Chess</h1>
+			<button id="minion-btn">Minion Mode</button>
+		</section>
+		<section id="chess-game">
+			<dialog id="promotion"></dialog>
+			<section id="board"></section>
+			<section id="controls">
+				<button id="reset">Reset</button>
+			</section>
+		</section>
+		<section>
+			<p id="winner"></p>
+		</section>
+	</body>
+</html>

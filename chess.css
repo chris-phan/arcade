@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+#chess-game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    padding-bottom: 0px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(8, 64px);
+    grid-template-rows: repeat(8, 64px);
+}
+
+.board-cell {
+    width: 64px;
+    height: 64px;
+    border: none;
+    background-color: sienna;
+    text-align: center;
+    padding: 0px;
+}
+
+.board-cell:hover, #reset:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.piece-img {
+    width: 64px;
+    height: 64px;
+}
+
+.light {
+    background-color: peachpuff;
+}
+
+.selected {
+    background-color: lightsteelblue !important;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#reset {
+    padding: 5px 15px;
+    size: 1rem;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    font-family: "Roboto Mono", monospace;
+}
+
+#winner {
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 570px) {
+    #board {
+        display: grid;
+        grid-template-columns: repeat(8, 45px);
+        grid-template-rows: repeat(8, 45px);
+    }
+
+    .board-cell {
+        width: 45px;
+        height: 45px;
+        border: none;
+        background-color: sienna;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .piece-img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .light {
+        background-color: peachpuff;
+    }
+}
